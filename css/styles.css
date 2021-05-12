@@ -1,14 +1,19 @@
 /*========general style========*/
 :root {
   --main-color: #212121;
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --logo-color: #000000;
+  --text-color: #757575;
   --accent-color: #2196f3;
   --footer-background-color: #2f303a;
   --body-background-color: #ffffff;
+  --background-color: #f5f4fa;
+  --main-background-color: #e5e5e5;
+  --white-contacts-color: rgba(255, 255, 255, 0.6);
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }
-.menu-link .link .current {
-  color: var(--accent-color);
+img {
+  display: block;
 }
 .list {
   list-style: none;
@@ -18,32 +23,38 @@
 }
 .body {
   font-family: var(--main-font);
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--body-background-color);
+  color: var(--text-color);
+}
+.header-contact-link:hover,
+.header-contact-link:focus,
+.menu-link:hover,
+.menu-link:focus,
+.menu-link.current,
+.address-link:hover,
+.address-link:focus,
+.address-contact-link:hover,
+.address-contact-link:focus {
+  color: var(--accent-color);
+}
+.hero-title,
+.hero {
+  background-color: var(--footer-background-color);
 }
 .header {
-  background-color: #ffffff;
+  background-color: var(--body-background-color);
 }
-.hero-title {
-  color: #ffffff;
-}
-.hero {
-  background-color: #2f303a;
-}
+.pictures,
 .skillss {
-  background-color: #e5e5e5;
-}
-.pictures {
-  background-color: #e5e5e5;
+  background-color: var(--main-background-color);
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
 }
-
+/*=====end general style========*/
 /*========= header ==========*/
-
 .logo-link {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -51,48 +62,40 @@
   color: var(--accent-color);
 }
 .logo-1 {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-color);
 }
 .menu-link {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: var(--logo-color);
 }
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-}
-
 .header-contact-link {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
-}
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 /*==========end header=========*/
 
 /*============hero=============*/
 .hero-title {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--body-background-color);
 }
 .project-thumbnail {
   width: 370px;
@@ -101,20 +104,20 @@
   top: 1130px;
 }
 .project-heading {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-color);
 }
 .project-description {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 .modal-btn {
   width: 200px;
@@ -122,85 +125,85 @@
   left: 700px;
   top: 430px;
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--body-background-color);
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  color: #000000;
+  color: var(--logo-color);
 }
 .filter-item {
-  color: #000000;
+  color: var(--logo-color);
 }
 .filter-item:hover,
 .filter-item:focus {
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--body-background-color);
 }
 /*============end hero=========*/
 
 /*=======skills company========*/
 .skills-list-title {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-color);
 }
 .skills-list-text {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 /*=====end skills company======*/
 
 /*========pictures=============*/
 .pictures-title {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 /*=====end pictures============*/
 /*=========team================*/
 .team-title {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 .team-list-item-name {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 .team-list-item-position {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 /*=========end team============*/
 
 /*==========footer=============*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 .logo-link {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -208,36 +211,28 @@
   color: var(--accent-color);
 }
 .logo-2 {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--body-background-color);
 }
 .address-link {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--body-background-color);
 }
 .address-contact-link {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-color);
-}
-.address-contact-link:hover,
-.address-contact-link:focus {
-  color: var(--accent-color);
+  color: var(--white-contacts-color);
 }
