@@ -7,10 +7,8 @@
   --footer-background-color: #2f303a;
   --body-background-color: #ffffff;
   --background-color: #f5f4fa;
-  --main-background-color: #e5e5e5;
   --white-contacts-color: rgba(255, 255, 255, 0.6);
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --border-color: rgba(238, 238, 238, 1);
 }
 img {
   display: block;
@@ -22,9 +20,7 @@ img {
   text-decoration: none;
 }
 .body {
-  font-family: var(--main-font);
-  background-color: var(--body-background-color);
-  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
 }
 .header-contact-link:hover,
 .header-contact-link:focus,
@@ -44,17 +40,14 @@ img {
 .header {
   background-color: var(--body-background-color);
 }
-.pictures,
-.skillss {
-  background-color: var(--main-background-color);
-}
 .team {
   background-color: var(--background-color);
 }
 /*=====end general style========*/
+
 /*========= header ==========*/
 .logo-link {
-  font-family: var(--secondary-font);
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -62,7 +55,7 @@ img {
   color: var(--accent-color);
 }
 .logo-1 {
-  font-family: var(--secondary-font);
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -70,7 +63,7 @@ img {
   color: var(--logo-color);
 }
 .menu-link {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -78,7 +71,7 @@ img {
   color: var(--logo-color);
 }
 .header-contact-link {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -89,7 +82,7 @@ img {
 
 /*============hero=============*/
 .hero-title {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -104,7 +97,7 @@ img {
   top: 1130px;
 }
 .project-heading {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -112,7 +105,7 @@ img {
   color: var(--main-color);
 }
 .project-description {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -137,13 +130,13 @@ img {
 .filter-item:hover,
 .filter-item:focus {
   background: var(--accent-color);
-  color: var(--body-background-color);
+  color: var(--border-color);
 }
 /*============end hero=========*/
 
 /*=======skills company========*/
 .skills-list-title {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -152,7 +145,7 @@ img {
   color: var(--main-color);
 }
 .skills-list-text {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -163,7 +156,7 @@ img {
 
 /*========pictures=============*/
 .pictures-title {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -173,7 +166,7 @@ img {
 /*=====end pictures============*/
 /*=========team================*/
 .team-title {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -181,7 +174,7 @@ img {
   color: var(--main-color);
 }
 .team-list-item-name {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -189,7 +182,7 @@ img {
   color: var(--main-color);
 }
 .team-list-item-position {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -203,7 +196,7 @@ img {
   background-color: var(--footer-background-color);
 }
 .logo-link {
-  font-family: var(--secondary-font);
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -211,7 +204,7 @@ img {
   color: var(--accent-color);
 }
 .logo-2 {
-  font-family: var(--secondary-font);
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -219,7 +212,7 @@ img {
   color: var(--body-background-color);
 }
 .address-link {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -228,7 +221,7 @@ img {
   color: var(--body-background-color);
 }
 .address-contact-link {
-  font-family: var(--main-font);
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -236,3 +229,4 @@ img {
   letter-spacing: 0.03em;
   color: var(--white-contacts-color);
 }
+/*======= end footer=============*/
