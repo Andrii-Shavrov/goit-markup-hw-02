@@ -19,7 +19,7 @@ img {
 .link {
   text-decoration: none;
 }
-.body {
+body {
   font-family: 'Roboto', sans-serif;
 }
 .header-contact-link:hover,
@@ -119,6 +119,15 @@ img {
   top: 430px;
   background: var(--accent-color);
   color: var(--body-background-color);
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -130,7 +139,17 @@ img {
 .filter-item:hover,
 .filter-item:focus {
   background: var(--accent-color);
-  color: var(--border-color);
+  color: var(--background-color);
+}
+.filter-item {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: var(--background-color);
 }
 /*============end hero=========*/
 
